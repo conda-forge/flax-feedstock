@@ -1,18 +1,18 @@
 {% set name = "flax" %}
-{% set version = "0.3.2" %}
+{% set version = "0.3.3" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
-  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: e995c4a40d4790751fbe08a44d7afec6fb22ac3e88a5f7912c40130cef81a3fa
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 361cfa44c9d6dee7aa1c73400eb27007aca84cd9fed6cec0a0650c7ae49c9033
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -35,8 +35,8 @@ test:
     - pip
 
 about:
-  home: "https://github.com/google/flax"
-  summary: "Flax: A neural network library for JAX designed for flexibility"
+  home: https://github.com/google/flax
+  summary: 'Flax: A neural network library for JAX designed for flexibility'
   license: Apache-2.0
   license_file: LICENSE
   doc_url: http://flax.readthedocs.io
@@ -47,5 +47,5 @@ extra:
     - PhilipVinc
     - jheek
     - avital
-    - levskaya 
+    - levskaya
     - andsteing
