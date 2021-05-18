@@ -25,6 +25,7 @@ requirements:
     - matplotlib-base
     - msgpack-python
     - numpy >=1.12
+    - optax >= 0.0.6
 
 test:
   imports:
