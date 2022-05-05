@@ -1,5 +1,5 @@
 {% set name = "flax" %}
-{% set version = "0.4.1" %}
+{% set version = "0.4.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: c8a997afc5a482a5d7473586ad74113e3b067f1e19afcb8096ac482ecc780a59
+  sha256: 65d3474570f0e23d9e3cf0650a47edbc937695f276445f877addfaf5ed61913f
 
 build:
   noarch: python
