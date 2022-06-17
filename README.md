@@ -152,4 +152,5 @@ Feedstock Maintainers
 * [@avital](https://github.com/avital/)
 * [@jheek](https://github.com/jheek/)
 * [@levskaya](https://github.com/levskaya/)
+* [@ngam](https://github.com/ngam/)
 
