@@ -1,11 +1,11 @@
-About flax
-==========
+About flax-feedstock
+====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/flax-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/google/flax
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/flax-feedstock/blob/main/LICENSE.txt)
 
 Summary: Flax: A neural network library for JAX designed for flexibility
 
