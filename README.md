@@ -150,6 +150,8 @@ Feedstock Maintainers
 * [@PhilipVinc](https://github.com/PhilipVinc/)
 * [@andsteing](https://github.com/andsteing/)
 * [@avital](https://github.com/avital/)
+* [@gabrielcnr](https://github.com/gabrielcnr/)
 * [@jheek](https://github.com/jheek/)
 * [@levskaya](https://github.com/levskaya/)
+* [@traversaro](https://github.com/traversaro/)
 
