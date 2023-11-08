@@ -1,5 +1,5 @@
 {% set name = "flax" %}
-{% set version = "0.6.1" %}
+{% set version = "0.7.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,26 +7,30 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 29960fb51d7b65dc692dd9935d9b0fc9ba3bf50943746a0ebeb55346816d8b54
+  sha256: d697323b557e92c1372798c2e2ae44bb7c123647158fc878bc765e45e25d990d 
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - python >=3.6
     - pip
+    - setuptools
+    - setuptools-scm
   run:
-    - python >=3.6
-    - jax >=0.3.2
+    - python >=3.9
+    - jax >=0.4.11
     - matplotlib-base
     - msgpack-python
     - numpy >=1.12
     - optax
+    - orbax-checkpoint
+    - tensorstore
     - rich >=11.1.0
-    - typing_extensions >=4.1.1
+    - typing_extensions >=4.2.0
     - pyyaml >=5.4.1
 
 test:
@@ -52,3 +56,5 @@ extra:
     - avital
     - levskaya
     - andsteing
+    - gabrielcnr
+    - traversaro
