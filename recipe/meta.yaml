@@ -11,21 +11,21 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.10
     - pip
     - setuptools
     - setuptools-scm
   run:
-    - python >=3.9
-    - jax >=0.4.11
+    - python >=3.10
+    - jax >=0.4.27
     - matplotlib-base
     - msgpack-python
-    - numpy >=1.12
+    - numpy >=1.23.2
     - optax
     - orbax-checkpoint
     - tensorstore
