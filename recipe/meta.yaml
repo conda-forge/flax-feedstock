@@ -22,7 +22,7 @@ requirements:
     - setuptools-scm
   run:
     - python >={{ python_min }}
-    - jax >=0.4.27
+    - jax >=0.8.1
     - matplotlib-base
     - msgpack-python
     - numpy >=1.23.2
