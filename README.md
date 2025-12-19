@@ -153,5 +153,6 @@ Feedstock Maintainers
 * [@gabrielcnr](https://github.com/gabrielcnr/)
 * [@jheek](https://github.com/jheek/)
 * [@levskaya](https://github.com/levskaya/)
+* [@pfackeldey](https://github.com/pfackeldey/)
 * [@traversaro](https://github.com/traversaro/)
 
