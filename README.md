@@ -11,7 +11,7 @@ Summary: Flax: A neural network library for JAX designed for flexibility
 
 Development: https://github.com/google/flax
 
-Documentation: http://flax.readthedocs.io
+Documentation: http://flax.readthedocs.io/
 
 Current build status
 ====================
@@ -153,5 +153,6 @@ Feedstock Maintainers
 * [@gabrielcnr](https://github.com/gabrielcnr/)
 * [@jheek](https://github.com/jheek/)
 * [@levskaya](https://github.com/levskaya/)
+* [@pfackeldey](https://github.com/pfackeldey/)
 * [@traversaro](https://github.com/traversaro/)
 
