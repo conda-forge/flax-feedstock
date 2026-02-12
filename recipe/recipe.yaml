@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: flax
-  version: 0.10.4
+  version: "0.12.4"
 
 package:
   name: ${{ name|lower }}
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: 57ae44d3f111fc85cff9049adb9684ce8ebd44e87bd8ca776ed52422c2d85021
+  sha256: 5e924734a0595ddfa06a824568617e5440c7948e744772cbe6101b7ae06d66a9
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv
 
