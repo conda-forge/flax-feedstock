@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: 0.12.1
+  version: "0.12.2"
   python_min: "3.11"
 
 package:
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/f/flax/flax-${{ version }}.tar.gz
-  sha256: ce2229a2ecb689678ba619e822346447c173c2ac1635e674e8249b97ed816cab
+  sha256: e9723b0881e571abe61885bb8770f53fdb3c383b6b3f5a923dcf6f1e9a687905
 
 build:
   number: 0
