@@ -1,0 +1,26 @@
+From 9b56c2ceed89561a354bf450a4d137a850b68c58 Mon Sep 17 00:00:00 2001
+From: Matthew Feickert <matthew.feickert@cern.ch>
+Date: Wed, 18 Mar 2026 12:42:36 -0600
+Subject: [PATCH] fix: Remove unneeded pin on optax
+
+* c.f. https://github.com/google/flax/pull/5292#issuecomment-4084822242
+---
+ pyproject.toml | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/pyproject.toml b/pyproject.toml
+index 1abd9910..5f9d5241 100644
+--- a/pyproject.toml
++++ b/pyproject.toml
+@@ -20,7 +20,7 @@ dependencies = [
+     # keep in sync with jax-version in .github/workflows/build.yml
+     "jax>=0.8.1",
+     "msgpack",
+-    "optax==0.2.6",
++    "optax",
+     "orbax-checkpoint",
+     "tensorstore",
+     "rich>=11.1",
+-- 
+2.53.0
+
