@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "0.12.4"
+  version: "0.12.5"
   python_min: "3.11"
 
 package:
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/f/flax/flax-${{ version }}.tar.gz
-  sha256: 5e924734a0595ddfa06a824568617e5440c7948e744772cbe6101b7ae06d66a9
+  sha256: 62163c22d2857996ec4bb7ab9f1054d830f0110301d9a43f7a50fa0852178aed
   patches:
     # Remove after v0.12.5
     # c.f. https://github.com/google/flax/issues/5352
@@ -34,8 +34,7 @@ requirements:
     - python >=${{ python_min }}
     - jax >=0.8.1
     - msgpack-python
-    # c.f. https://github.com/google/flax/blob/7c487b1e00c10185aae41bb798f081e696f619e5/pyproject.toml#L19
-    - numpy >=1.26.0,<2.4.0
+    - numpy >=1.23.2
     - optax
     - orbax-checkpoint
     - tensorstore
@@ -48,13 +47,10 @@ tests:
   - python:
       imports:
         - flax
-      python_version: ${{ python_min }}.*
-  - requirements:
-      run:
-        - pip
-        - python ${{ python_min }}.*
-    script:
-      - pip check
+      pip_check: true
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
 
 about:
   summary: "Flax: A neural network library for JAX designed for flexibility"
