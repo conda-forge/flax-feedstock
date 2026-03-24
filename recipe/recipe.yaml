@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "0.12.2"
+  version: "0.12.3"
   python_min: "3.11"
 
 package:
@@ -10,7 +10,11 @@ package:
 
 source:
   url: https://pypi.org/packages/source/f/flax/flax-${{ version }}.tar.gz
-  sha256: e9723b0881e571abe61885bb8770f53fdb3c383b6b3f5a923dcf6f1e9a687905
+  sha256: 8b9ca031d0a4759b0719718de578b27703a8b2d6105552b30f98989ce1be04f0
+  patches:
+    # Remove after v0.12.5
+    # c.f. https://github.com/google/flax/issues/5352
+    - remove-orbax-export-from-dependencies.patch
 
 build:
   number: 0
@@ -27,7 +31,8 @@ requirements:
     - python >=${{ python_min }}
     - jax >=0.8.1
     - msgpack-python
-    - numpy >=1.23.2
+    # c.f. https://github.com/google/flax/blob/7c487b1e00c10185aae41bb798f081e696f619e5/pyproject.toml#L19
+    - numpy >=1.26.0,<2.4.0
     - optax
     - orbax-checkpoint
     - tensorstore

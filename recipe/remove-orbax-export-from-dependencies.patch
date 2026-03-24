@@ -1,0 +1,25 @@
+From 932177f1ea160df2e826da2497625debfd5b8ada Mon Sep 17 00:00:00 2001
+From: Matthew Feickert <matthew.feickert@cern.ch>
+Date: Wed, 18 Mar 2026 10:30:26 -0600
+Subject: [PATCH] fix: Remove orbax-export from dependencies
+
+* c.f. https://github.com/google/flax/issues/5352#issuecomment-4083198894
+---
+ pyproject.toml | 1 -
+ 1 file changed, 1 deletion(-)
+
+diff --git a/pyproject.toml b/pyproject.toml
+index d1574321..92856df1 100644
+--- a/pyproject.toml
++++ b/pyproject.toml
+@@ -27,7 +27,6 @@ dependencies = [
+     "typing_extensions>=4.2",
+     "PyYAML>=5.4.1",
+     "treescope>=0.1.7",
+-    "orbax-export>=0.0.8",
+ ]
+ classifiers = [
+     "Development Status :: 3 - Alpha",
+-- 
+2.53.0
+
