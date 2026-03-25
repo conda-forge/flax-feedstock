@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "0.12.3"
+  version: "0.12.4"
   python_min: "3.11"
 
 package:
@@ -10,11 +10,14 @@ package:
 
 source:
   url: https://pypi.org/packages/source/f/flax/flax-${{ version }}.tar.gz
-  sha256: 8b9ca031d0a4759b0719718de578b27703a8b2d6105552b30f98989ce1be04f0
+  sha256: 5e924734a0595ddfa06a824568617e5440c7948e744772cbe6101b7ae06d66a9
   patches:
     # Remove after v0.12.5
     # c.f. https://github.com/google/flax/issues/5352
     - remove-orbax-export-from-dependencies.patch
+    # Remove after v0.12.5
+    # c.f. https://github.com/google/flax/pull/5292
+    - remove-unneeded-pin-on-optax.patch
 
 build:
   number: 0
